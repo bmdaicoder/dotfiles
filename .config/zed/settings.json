@@ -1,0 +1,37 @@
+{
+  "autosave": "on_focus_change",
+  "buffer_font_family": "Iosevka Nerd Font Mono",
+  "vim_mode": true,
+  "base_keymap": "VSCode",
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_weight": 400,
+  "buffer_line_height": "comfortable",
+  "centered_layout": {
+    "left_padding": 8,
+    "right_padding": 8
+  },
+  "theme": {
+    "mode": "dark",
+    "light": "Gruvbox Light",
+    "dark": "Gruvbox Dark"
+  },
+  "scrollbar": {
+    "show": "never"
+  },
+  "tabs": {
+    "file_icons": true,
+    "git_status": true
+  },
+  "assistant": {
+    "enabled": false,
+    "version": "1"
+  },
+  "lsp": {
+    "gopls": {
+      "initialization_options": {
+        "usePlaceholders": true
+      }
+    }
+  }
+}

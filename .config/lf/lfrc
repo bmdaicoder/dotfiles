@@ -1,0 +1,18 @@
+set drawbox
+set cursorpreviewfmt "\033[7m"
+
+cmd on-redraw %{{
+    if [ "$lf_width" -le 80 ]; then
+        lf -remote "send $id set ratios 1:2"
+    elif [ "$lf_width" -le 160 ]; then
+        lf -remote "send $id set ratios 1:2:3"
+    else
+        lf -remote "send $id set ratios 1:2:3:5"
+    fi
+}}
+
+cmd mkdir %mkdir "$@"
+map a push :mkdir<space>
+
+cmd touch %touch "$@"
+map c push :touch<space>
